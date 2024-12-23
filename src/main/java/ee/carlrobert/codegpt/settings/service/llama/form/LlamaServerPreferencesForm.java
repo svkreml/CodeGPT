@@ -68,7 +68,7 @@ public class LlamaServerPreferencesForm {
     portField = new PortField(settings.getServerPort());
     portField.setEnabled(!serverRunning);
 
-    maxTokensField = new IntegerField("max_tokens", 256, 4096);
+    maxTokensField = new IntegerField("max_tokens", 256, 131072);
     maxTokensField.setColumns(12);
     maxTokensField.setValue(settings.getContextSize());
     maxTokensField.setEnabled(!serverRunning);
